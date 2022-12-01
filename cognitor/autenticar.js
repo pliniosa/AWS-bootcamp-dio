@@ -73,10 +73,10 @@ export class EntrarComponent implements OnInit {
     this.cadastrado.verificador = usuario.id;
     if (this.cadastrado.id == this.cadastrado.verificador) {
       this.router.navigateByUrl('principal');
-      setTimeout(function () { location.reload(); }, 0)
+      
     } else {
       this.router.navigateByUrl('edit-paciente');
-      setTimeout(function () { location.reload(); }, 0)
+      
     }
   }
 
